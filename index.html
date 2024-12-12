@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Faq Page to answer the most important questions">
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <title>Simple FAQ | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 400;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        color: #030616
+      }
+      .title{
+        width: 100vw;
+         height: 25vh;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: #ffffff
+      }
+      .title, .faq, .question_container, .question{
+        display: flex;
+        flex-direction: column;
+      }
+       h1{
+        font-size: 36px;
+        font-weight: 600;
+      }
+      h2{
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .faq{
+        width: 100vw;
+        justify-content: center;
+        background-color: #f8fafc;
+        padding: 50px 0;
+      }
+      .question_container{
+        width: 45%;
+        margin:auto;
+        gap: 20px;
+      }
+      .question{
+        gap: 20px;
+        margin-bottom: 20px
+
+      }
+      ol{
+        padding: 0px 20px;
+      }
+      ol li{
+        padding: 6px 0px;
+      }
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+      a{
+        text-decoration: none;
+        color: #4e80ee;
+      }
+      .divider{
+        width: 100%;
+        height: 1px;
+        background-color: #D2D5DA;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Frequently Asked Questions
+  
+    Browse through the most frequently asked questions
+  
+    How can I track my order?
+  
+    You can track your order using the following steps
+  
+    Go to the Order Tracking page.
+  
+    Enter your order number and email address.
+  
+    Click on the Track Order button to view the current status of your shipment.
+  
+    If you encounter any issues, please visit our Help Center.
+  
+    What is your return policy?
+  
+    We offer a 30-day return policy on most items. Here are some key points
+  
+    Items must be in original condition
+  
+    Unworn, unused, and unwashed.
+  
+    Include original packaging and tags
+  
+    All items should be returned with their original packaging and tags.
+  
+    Proof of purchase
+  
+    A receipt or proof of purchase is required.
+  
+    For more detailed information, read our full Return Policy.
+  
+  -->
+  <header class="title">
+    <h1>Frequently Asked Questions</h1>
+    <p>Browse through the most frequently asked questions</p>
+  </header>
+  <section class="faq">
+    <div class="question_container">
+    <div class="question">
+      <h2>How can I track my order?</h2>
+      <p>You can track your order using the following steps:</p>
+      <ol>
+        <li>Go to the Order <a href="#">Tracking page</a>.</li>
+        <li>Enter your order number and email address.</li>
+        <li>Click on the Track Order button to view the current status of your shipment.</li>
+      </ol>
+      <p>If you encounter any issues, please visit our <a href="#">Help Center</a>.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="question">
+      <h2>What is your return policy?</h2>
+      <p>We offer a 30-day return policy on most items. Here are some key points
+        <ol>
+          <li><strong>Items must be in original condition:</strong> Unworn, unused, and unwashed</li>
+          <li><strong>Include original packaging and tags:</strong> All items should be returned with their original packaging and tags</li>
+          <li><strong>Proof of purchase:</strong>  A receipt or proof of purchase is required</li>
+        </ol>
+        <p>For more detailed information, read our full <a href="#">Return Policy</a>.</p>
+        </div>
+  </div>      
+</section>
+
+    <footer class="author-info">
+     Coded by <a href="#">Mohamed Lazaar</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </footer>
+  </body>
+</html>
